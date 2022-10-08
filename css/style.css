@@ -1,0 +1,167 @@
+/* #0074e9 #e7223d*/
+h1{
+    text-align: center;
+    margin: 50px auto 30px;
+}
+h1 a{}
+h1 a img{
+    width: 200px;
+}
+main{
+    width: 500px;
+    margin: 0 auto;
+}
+main #login-Form{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+main #login-Form fieldset{}
+main #login-Form fieldset ul{}
+main #login-Form fieldset ul li{
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex; /*flex해줘서 span태그도 스타일적용됨*/
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+    position: relative;/*기준설정*/
+}
+main #login-Form fieldset ul .error{
+    color: #e7223d;
+    padding: 10px;
+    display: none;
+}
+main #login-Form fieldset ul .id_error{
+    border: 0px;
+}
+main #login-Form fieldset ul .pw_error{
+    border: 0px;
+}
+main #login-Form fieldset ul li span{
+    
+}
+main #login-Form fieldset ul li .id_bg{
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    width: 10px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+main #login-Form fieldset ul li .id_bg::after{
+    content: "";
+    background-image: url(../images/icon.svg);
+    background-position: 0 0;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 14px;
+    top: 11px;
+}
+main #login-Form fieldset ul li .pw_bg{
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    width: 10px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+main #login-Form fieldset ul li .pw_bg::after{
+    content: "";
+    background-image: url(../images/icon.svg);
+    background-position: -21px 0;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 14px;
+    top: 11px;
+}
+main #login-Form fieldset ul li span input{
+    width: 400px;
+    height: 40px;
+    border: 0;
+    padding-left: 5px;
+}
+/*placeholder 안내글씨 따로설정*/
+main #login-Form fieldset ul li span input::placeholder{
+    font-size: 14px;
+    color: #949494;
+}
+main #login-Form fieldset ul li span input[type=text]{}
+main #login-Form fieldset ul li span input[type=password]{}
+main #login-Form fieldset ul li .pw_show_hide{
+    background-image: url(../images/icon.svg);
+    background-position: -105px 0;
+    width: 21px;
+    height: 21px;
+    position: absolute; /*li 기준으로 움직임*/
+    right: 11px;
+    top: 8px;
+}
+main #login-Form fieldset .btm{
+    display: flex;
+    flex-flow: row nowrap; /*줄바꿈 안되게*/
+    padding: 15px 0;
+    justify-content: space-between; /* 양쪽 끝으로 보냄 */
+}
+main #login-Form fieldset .btm p{}
+main #login-Form fieldset .btm p label{
+
+}
+main #login-Form fieldset .btm p label input[name=login_y]{
+    appearance: none; /*체크된거 안보이게*/
+}
+/*안눌러졌을때*/
+main #login-Form fieldset .btm p label input[name=login_y]+ span::before{
+    background-color: white;
+    border: 1px solid #ccc;
+    content: ""; /*이거안하면 추가된택스트 안보임*/
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    /*체크박스 누르기전 이미지*/
+    background-image: url(../images/icon.svg);
+    background-position: -65px -22px;
+    margin-right: 5px;
+}
+/*눌러졌을때*/
+main #login-Form fieldset .btm p label input[name=login_y]:checked + span::before{
+    /*체크박스 눌렀을때 이미지*/
+    background-position: -84px -21px;
+}
+main #login-Form fieldset .btm p label span{}
+main #login-Form fieldset .btm .idpw_search{
+    color: #0074e9;
+}
+main #login-Form fieldset .btm .idpw_search::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/icon.svg);
+    background-position:-104px -20px;
+    margin-left: 5px;
+    width: 8px;
+    height: 15px;
+}
+main #login-Form fieldset #login_btn{
+    background-color: #0074e9;
+    width: 100%;
+    color: white;
+    padding: 20px 0 ;
+    box-shadow: 0 2px 0 #00478f;
+    border: none;
+}
+main .join_link{
+    border: 2px solid #aaa;
+    background-color: white;
+    width: 100%;
+    color: #0074e9;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    box-shadow: 0 2px 0 #ccc;
+}
+footer{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+    color: #333;
+}
+
